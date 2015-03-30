@@ -1,0 +1,27 @@
+{
+  "name": "esri-proj-codes",
+  "version": "1.0.0",
+  "description": "A node.js module for projection code lookups",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Esri/esri-proj-codes.git"
+  },
+  "keywords": [
+    "projections"
+  ],
+  "author": "Chris Helm",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/Esri/esri-proj-codes/issues"
+  },
+  "homepage": "https://github.com/Esri/esri-proj-codes",
+  "devDependencies": {
+    "standard": "^3.3.0",
+    "tap-spec": "^2.2.2",
+    "tape": "^3.5.0"
+  }
+}
