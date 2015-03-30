@@ -1,5 +1,7 @@
 # esri-proj-codes
 
+This module provides a method for looking up Well Known Text (WKT) representations of various projections. A projection can be found by providing an Esri projection code, and will result in the projection name and WKT being returned. 
+
 ##  Usage
 
 Basic installation would occur within an existing or new node.js project like so

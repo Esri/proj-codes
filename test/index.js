@@ -1,3 +1,7 @@
+/*
+  Copyright © 1995-2015 Esri. All rights reserved.
+*/
+
 var test = require('tape'),
  codes = require('../')
 

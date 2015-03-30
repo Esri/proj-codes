@@ -1,3 +1,7 @@
+/*
+  Copyright © 1995-2015 Esri. All rights reserved.
+*/
+
 var fs = require('fs')
 
 var projectedCodes = JSON.parse(fs.readFileSync(__dirname + '/lib/projected.json'))
