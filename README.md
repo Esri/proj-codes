@@ -6,16 +6,16 @@ This module provides a method for looking up Well Known Text (WKT) representatio
 
 Basic installation would occur within an existing or new node.js project like so
 
-  ```
-  npm install esri-proj-codes
-  ```
+```
+npm install esri-proj-codes
+```
 
 Then to use this module you would require it and call the `lookup` method with a given proj code
 
-  ```
-  var codes = require('esri-proj-codes')
-  var projInfo = codes.lookup('3857')
-  ```
+```js
+var codes = require('esri-proj-codes')
+var projInfo = codes.lookup('3857')
+```
 
 ## Source 
 
