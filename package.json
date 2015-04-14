@@ -1,7 +1,7 @@
 {
   "name": "esri-proj-codes",
   "version": "1.0.0",
-  "description": "A node.js module for projection code lookups",
+  "description": "Get a WKT representation from an Esri projection code.",
   "main": "index.js",
   "scripts": {
     "test": "standard && node test | tap-spec"

@@ -1,6 +1,8 @@
 # esri-proj-codes
 
-This module provides a method for looking up Well Known Text (WKT) representations of various projections. A projection can be found by providing an Esri projection code, and will result in the projection name and WKT being returned. 
+[![npm version](https://img.shields.io/npm/v/esri-proj-codes.svg?style=flat-square)](https://www.npmjs.com/package/esri-proj-codes)
+
+This module provides a method for looking up Well Known Text (WKT) representations of various projections. A projection can be found by providing an Esri projection code, and will result in the projection name and WKT being returned.
 
 ##  Usage
 
@@ -17,13 +19,13 @@ var codes = require('esri-proj-codes')
 var projInfo = codes.lookup('3857')
 ```
 
-## Source 
+## Source
 
-There are 3 sets of projection codes includes in this module. 
+There are 3 sets of projection codes includes in this module.
 
 * [Projected Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
 * [Geographic Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
-* [Vertical Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)  
+* [Vertical Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)
 
 ## Resources
 
