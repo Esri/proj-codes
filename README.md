@@ -20,6 +20,16 @@ var codes = require('esri-proj-codes')
 var projInfo = codes.lookup('3857')
 ```
 
+You might also want the data from each projection code set separately, to
+minimize file size in the browser or to reduce memory usage. You can require
+each of the sets directly:
+
+```
+var projected = require('esri-proj-codes/projected.json')
+var geographic = require('esri-proj-codes/geographic.json')
+var vertical = require('esri-proj-codes/vertical.json')
+```
+
 ## Source
 
 There are 3 sets of projection codes includes in this module.
