@@ -7,24 +7,20 @@ This module provides a method for looking up Well Known Text (WKT) representatio
 
 ##  Usage
 
-Basic installation would occur within an existing or new node.js project like so
-
 ```
 npm install esri-proj-codes
 ```
 
-Then to use this module you would require it and call the `lookup` method with a given proj code
+Then require the module and call the `lookup` method and pass in your projection code of choice
 
 ```js
 var codes = require('esri-proj-codes')
 var projInfo = codes.lookup('3857')
 ```
 
-You might also want the data from each projection code set separately, to
-minimize file size in the browser or to reduce memory usage. You can require
-each of the sets directly:
+You might also want the data from each projection code set separately, to minimize file size in the browser or to reduce memory usage. You can require each of the sets directly
 
-```
+```js
 var projected = require('esri-proj-codes/projected.json')
 var geographic = require('esri-proj-codes/geographic.json')
 var vertical = require('esri-proj-codes/vertical.json')
@@ -32,7 +28,7 @@ var vertical = require('esri-proj-codes/vertical.json')
 
 ## Source
 
-There are 3 sets of projection codes includes in this module.
+There are three sets of projection codes included in this module.
 
 * [Projected Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
 * [Geographic Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
@@ -40,7 +36,7 @@ There are 3 sets of projection codes includes in this module.
 
 ## Resources
 
-* [ArcGIS REST API Documentation](http://resources.arcgis.com/en/help/arcgis-rest-api/)
+* [Using spatial references](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Using_spatial_references/02r3000000qq000000/)
 * [ArcGIS for Developers](http://developers.arcgis.com)
 
 ## Issues
@@ -53,7 +49,7 @@ Esri welcomes contributions from anyone and everyone. Please see our [guidelines
 
 ## Licensing
 
-Copyright 2014 Esri
+Copyright 2015 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

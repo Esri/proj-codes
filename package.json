@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Esri/esri-proj-codes",
   "devDependencies": {
+    "gh-release": "^2.0.2",
     "standard": "^3.3.0",
     "tap-spec": "^2.2.2",
     "tape": "^3.5.0"
