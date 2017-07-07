@@ -8,7 +8,7 @@ test('lookup project codes', function (t) {
   var proj = codes.lookup(3857)
   t.equal(proj.name, 'WGS_1984_Web_Mercator_Auxiliary_Sphere')
 
-  // geographic codes
+  // // geographic codes
   proj = codes.lookup(3819)
   t.equal(proj.name, 'GCS_HD1909')
 
