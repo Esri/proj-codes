@@ -1,6 +1,6 @@
 {
   "name": "esri-proj-codes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get a WKT representation from an Esri projection code.",
   "main": "index.js",
   "scripts": {
