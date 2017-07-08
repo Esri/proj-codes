@@ -24,6 +24,8 @@ You might also want the data from each projection code set separately, to minimi
 var projected = require('esri-proj-codes/projected.json')
 var geographic = require('esri-proj-codes/geographic.json')
 var vertical = require('esri-proj-codes/vertical.json')
+var datumTransformations = require('esri-proj-codes/transformations.json')
+var verticalDatumTransformations = require('esri-proj-codes/vertical-transformations.json')
 ```
 
 ## Source
@@ -33,6 +35,7 @@ There are three sets of projection codes included in this module.
 * [Projected Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
 * [Geographic Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
 * [Vertical Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)
+* [Datum Transformation Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Datum_transformations/02r3000000r8000000/)
 
 ## Resources
 

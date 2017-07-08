@@ -1,10 +1,11 @@
 {
   "name": "esri-proj-codes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get a WKT representation from an Esri projection code.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && node test | tap-spec"
+    "test": "standard && node test | tap-spec",
+    "update-codes": "node scrape-convert.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/Esri/esri-proj-codes",
   "devDependencies": {
+    "csvtojson": "^1.1.7",
     "gh-release": "^2.0.2",
     "standard": "^3.3.0",
     "tap-spec": "^2.2.2",
