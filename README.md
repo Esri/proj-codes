@@ -3,7 +3,9 @@
 [![npm version](https://img.shields.io/npm/v/esri-proj-codes.svg?style=flat-square)](https://www.npmjs.com/package/esri-proj-codes)
 [![build status](https://img.shields.io/travis/Esri/esri-proj-codes.svg?style=flat-square)](https://travis-ci.org/Esri/esri-proj-codes)
 
-This module provides a method for looking up Well Known Text (WKT) representations of various projections. A projection can be found by providing an Esri projection code, and will result in the projection name and WKT being returned.
+This module provides a method for looking up information about the Coordinate Reference Systems (CRS) shipped with ArcGIS.
+
+Provide a Well Known ID (WKID) to the `lookup()` method and the CRS Name and Well Known Text (WKT) will be returned.
 
 ##  Usage
 
@@ -11,31 +13,46 @@ This module provides a method for looking up Well Known Text (WKT) representatio
 npm install esri-proj-codes
 ```
 
-Then require the module and call the `lookup` method and pass in your projection code of choice
+Then require the module, call the `lookup` method and pass in your well known id of choice.
 
 ```js
 var codes = require('esri-proj-codes')
-var projInfo = codes.lookup('3857')
+
+var projInfo = codes.lookup(3857)
+
+projInfo.name
+// 'WGS_1984_Web_Mercator_Auxiliary_Sphere'
+
+projInfo.wkt
+// PROJCS["WGS_1984_Web_Mercator_Auxiliary_Sphere",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984"...
+
+// or
+codes.lookup(3857).name
+// 'WGS_1984_Web_Mercator_Auxiliary_Sphere'
 ```
 
-You might also want the data from each projection code set separately, to minimize file size in the browser or to reduce memory usage. You can require each of the sets directly
+To minimize file size in the browser or overall memory consumed you can also require collections individually
 
 ```js
-var projected = require('esri-proj-codes/projected.json')
-var geographic = require('esri-proj-codes/geographic.json')
-var vertical = require('esri-proj-codes/vertical.json')
-var datumTransformations = require('esri-proj-codes/transformations.json')
-var verticalDatumTransformations = require('esri-proj-codes/vertical-transformations.json')
+require('esri-proj-codes/geographic.json')
+
+require('esri-proj-codes/projected.json') // lots of these
+require('esri-proj-codes/vertical.json')
+
+// equation-based and grid-based transformations are grouped
+require('esri-proj-codes/transformations.json')
+require('esri-proj-codes/vertical-transformations.json')
 ```
 
 ## Source
 
-There are three sets of projection codes included in this module.
+The codes included in this module are scraped from the documentation below.
 
-* [Projected Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
-* [Geographic Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
-* [Vertical Projection Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)
-* [Datum Transformation Codes](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Datum_transformations/02r3000000r8000000/)
+* [Projected coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
+* [Geographic coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
+* [Vertical coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)
+* [Datum transformations](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Datum_transformations/02r3000000r8000000/)
+* [Grid-based datum transformations](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Grid_based_datum_transformations/02r30000029z000000/)
 
 ## Resources
 
