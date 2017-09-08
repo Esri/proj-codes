@@ -2,10 +2,10 @@ var test = require('tape'),
  codes = require('../')
 
 test('lookup project codes', function (t) {
-  t.plan(6)
+  t.plan(8)
 
   // projected codes
-  var proj = codes.lookup(3857)
+  let proj = codes.lookup(3857)
   t.equal(proj.name, 'WGS_1984_Web_Mercator_Auxiliary_Sphere')
 
   // geographic codes
@@ -27,4 +27,12 @@ test('lookup project codes', function (t) {
   // undefined proj code
   proj = codes.lookup(3333333)
   t.equal(proj, undefined)
+
+  // just the name
+  let name = codes.lookup('3857').name
+  t.equal(name, 'WGS_1984_Web_Mercator_Auxiliary_Sphere')
+
+  // try the old one
+  name = codes.lookup('102100').name
+  t.equal(name, 'WGS_1984_Web_Mercator_Auxiliary_Sphere')
 })
