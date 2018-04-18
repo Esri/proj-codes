@@ -23,7 +23,7 @@ projectionCodes.forEach(function (scrapedFile) {
   })
   .on('done', (error)=> {
     if (!error) {
-      fs.writeFile(scrapedFile + '.json', JSON.stringify(sortedOutput), 'utf8')
+      fs.writeFile(scrapedFile + '.json', JSON.stringify(sortedOutput), 'utf8', () => console.log(`wrote ${scrapedFile}.json`))
     }
   })
 })

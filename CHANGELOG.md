@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+* ArcGIS 10.6.1 Codes
+
 ## [1.0.3] - 2017-07-07
 ### Added
 * ArcGIS 10.5.1 / 2.0 codes
