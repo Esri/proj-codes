@@ -21,7 +21,7 @@ test('lookup project codes', function (t) {
   t.equal(proj.name, 'Schwarzeck_To_WGS_1984')
 
   // vertical transformation code
-  proj = codes.lookup(110043)
+  proj = codes.lookup('110043')
   t.equal(proj.name, 'NGVD29_To_NAVD88_USFT_HARN_ECW')
 
   // undefined proj code

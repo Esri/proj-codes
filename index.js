@@ -5,5 +5,10 @@ var transformationCodes = require('./transformations.json')
 var verticalTransformationCodes = require('./vertical-transformations.json')
 
 exports.lookup = function (code) {
-  return projectedCodes[code] || geographicCodes[code] || verticalCodes[code] || transformationCodes[code] || verticalTransformationCodes[code]
+  // if an outdated web mercator code is passed in, substitute the correct one
+  if (code === 102100 || code === '102100') {
+    return projectedCodes[3857]
+  } else {
+    return projectedCodes[code] || geographicCodes[code] || verticalCodes[code] || transformationCodes[code] || verticalTransformationCodes[code]
+  }
 }
