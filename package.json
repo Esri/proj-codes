@@ -1,5 +1,5 @@
 {
-  "name": "esri-proj-codes",
+  "name": "@esri/proj-codes",
   "version": "1.0.3",
   "description": "Get a WKT representation from an Esri projection code.",
   "main": "index.js",
@@ -16,7 +16,8 @@
   ],
   "author": "Chris Helm",
   "contributors": [
-    "John Gravois <john@esri.com>"
+    "John Gravois <john@esri.com>",
+    "Daniel Fenton <dfenton@esri.com>"
   ],
   "license": "Apache-2.0",
   "bugs": {

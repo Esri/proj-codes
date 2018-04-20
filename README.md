@@ -1,7 +1,7 @@
 # esri-proj-codes
 
 [![npm version](https://img.shields.io/npm/v/esri-proj-codes.svg?style=flat-square)](https://www.npmjs.com/package/esri-proj-codes)
-[![build status](https://img.shields.io/travis/Esri/esri-proj-codes.svg?style=flat-square)](https://travis-ci.org/Esri/esri-proj-codes)
+[![build status](https://img.shields.io/travis/Esri/esri-proj-codes/master.svg?style=flat-square)](https://travis-ci.org/Esri/esri-proj-codes)
 
 This module provides a method for looking up information about the Coordinate Reference Systems (CRS) shipped with ArcGIS.
 
@@ -9,7 +9,7 @@ Provide a Well Known ID (WKID) to the `lookup()` method and the CRS Name and Wel
 
 ##  Usage
 
-```
+```console
 npm install esri-proj-codes
 ```
 
@@ -48,11 +48,11 @@ require('esri-proj-codes/vertical-transformations.json')
 
 The codes included in this module are scraped from the documentation below.
 
-* [Projected coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Projected_coordinate_systems/02r3000000vt000000/)
-* [Geographic coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Geographic_coordinate_systems/02r300000105000000/)
-* [Vertical coordinate systems](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Vertical_coordinate_systems/02r3000000rn000000/)
-* [Datum transformations](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Datum_transformations/02r3000000r8000000/)
-* [Grid-based datum transformations](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Grid_based_datum_transformations/02r30000029z000000/)
+* [Projected coordinate systems](https://developers.arcgis.com/rest/services-reference/projected-coordinate-systems.htm)
+* [Geographic coordinate systems](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm)
+* [Vertical coordinate systems](https://developers.arcgis.com/rest/services-reference/vertical-coordinate-systems.htm)
+* [Datum transformations](https://developers.arcgis.com/rest/services-reference/datum-transformations.htm)
+* [Grid-based datum transformations](https://developers.arcgis.com/rest/services-reference/grid-based-datum-transformations.htm)
 
 ## Resources
 
