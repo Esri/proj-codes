@@ -1,15 +1,18 @@
 {
   "name": "@esri/proj-codes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get a WKT representation from an Esri projection code.",
   "main": "index.js",
   "scripts": {
     "test": "standard && node test | tap-spec",
     "update-codes": "node scrape-convert.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Esri/esri-proj-codes.git"
+    "url": "git://github.com/Esri/proj-codes.git"
   },
   "keywords": [
     "projections"
@@ -21,9 +24,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Esri/esri-proj-codes/issues"
+    "url": "https://github.com/Esri/proj-codes/issues"
   },
-  "homepage": "https://github.com/Esri/esri-proj-codes",
+  "homepage": "https://github.com/Esri/proj-codes",
   "devDependencies": {
     "csvtojson": "^1.1.7",
     "gh-release": "^2.0.2",
