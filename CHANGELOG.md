@@ -2,7 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## 2.x (and beyond)
+
+This project has been deprecated. The npm package `@esri/proj-codes` is now hydrated with a more complete list of codes from https://github.com/esri/projection-engine-db-doc/tree/master/json.
+
+Version `v2.2.0` is used to denote the collection of codes supported by ArcGIS Pro 2.2, [released in June, 2018](https://www.esri.com/arcgis-blog/products/arcgis-pro/uncategorized/arcgis-pro-2-2-now-available/)
 
 ## [1.0.4] - 2018-04-23
 
@@ -46,7 +50,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 * Support for browserify and other bundlers (see Esri/esri-proj-codes#4 for more info)
 
-[Unreleased]: https://github.com/Esri/esri-proj-codes/compare/v1.0.4...HEAD
 [1.0.4]: https://github.com/Esri/esri-proj-codes/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/Esri/esri-proj-codes/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/Esri/esri-proj-codes/compare/v1.0.1...v1.0.2
